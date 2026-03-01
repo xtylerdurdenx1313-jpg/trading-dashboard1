@@ -1,0 +1,90 @@
+{
+  "agent": "polymarket-trader",
+  "status": "caution",
+  "mode": "paper",
+  "initialized": true,
+  "session_start": "2026-02-27T16:55:00Z",
+  "account": {
+    "starting_capital": 500.00,
+    "balance": 442.04,
+    "equity": 442.04,
+    "pnl": -57.96,
+    "pnl_percent": -11.6,
+    "max_loss_per_trade": 10.00,
+    "max_loss_per_day": 25.00,
+    "max_drawdown_limit": 50.00,
+    "drawdown_alert": "EXCEEDED - Account below 10% max drawdown limit"
+  },
+  "positions": [
+    {
+      "market_id": "2026-03-05-AI-announcement",
+      "market_name": "Will OpenAI announce GPT-5 by March 10?",
+      "category": "tech",
+      "entry_time": "2026-02-27T22:00:12Z",
+      "entry_price": 0.45,
+      "position_size": 30.00,
+      "side": "YES",
+      "target_exit": 0.55,
+      "target_pnl": 3.00,
+      "max_loss": 10.00,
+      "days_remaining": 9,
+      "current_price": 0.43,
+      "current_pnl": -1.71,
+      "status": "open",
+      "trend": "improving",
+      "volume_24h": 3450,
+      "spread": 0.011
+    },
+    {
+      "market_id": "2026-03-02-FOMC-decision",
+      "market_name": "Fed FOMC announces rate change March 2?",
+      "category": "macro",
+      "entry_time": "2026-03-01T15:30:49Z",
+      "entry_price": 0.35,
+      "position_size": 6.00,
+      "side": "NO",
+      "target_exit": 0.25,
+      "target_pnl": 0.60,
+      "max_loss": 0.60,
+      "days_remaining": 1,
+      "current_price": 0.35,
+      "current_pnl": 0.00,
+      "status": "open",
+      "trend": "new_entry",
+      "volume_24h": 7800,
+      "spread": 0.007,
+      "signal_strength": 5.0,
+      "entry_reason": "Strongest signal (5.0/5.0): Strong downward momentum (-5.4%), extremely tight spread (0.7%), highest volume ($7,800). Highest conviction setup. Taking small position ($6) in caution mode."
+    }
+  ],
+  "trades": {
+    "total": 3,
+    "wins": 0,
+    "losses": 2,
+    "win_rate": 0.0,
+    "largest_win": null,
+    "largest_loss": -27.10,
+    "total_fees": 0.86,
+    "closed_this_cycle": 1
+  },
+  "daily_stats": {
+    "date": "2026-03-01",
+    "trades_today": 2,
+    "pnl_today": -27.10,
+    "unrealized_pnl_today": -1.71,
+    "max_equity_today": 442.04,
+    "min_equity_today": 442.04,
+    "pnl_change_this_cycle": 0.43,
+    "last_entry_time": "2026-03-01T15:30:49Z"
+  },
+  "last_updated": "2026-03-01T18:29:15Z",
+  "last_spawn": "2026-03-01T18:29:15Z",
+  "last_cycle": "2026-03-01-13:29",
+  "cycle_actions": {
+    "exits": 0,
+    "entries": 1,
+    "holds": 1,
+    "scans": 7
+  },
+  "notes": "Cycle 2026-03-01 11:30: Scanned 7 short-term markets. Account in caution mode (-11.6% drawdown). ENTRY EXECUTED: Fed FOMC decision (March 2) at 0.35 entry, signal 5.0/5.0. Holding GPT-5 (improving: -$1.71, 9 days left). Position size restriction active ($6 max for new entries). New exposure: GPT-5 ($30) + FOMC ($6) = $36 total. Capital preservation mode: recovery target $460 (+$18 needed). Momentum turning positive. Next cycle: Monitor FOMC (1 day to resolution) and GPT-5 breakout."
+}

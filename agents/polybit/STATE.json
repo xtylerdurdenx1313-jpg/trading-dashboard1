@@ -1,0 +1,76 @@
+{
+  "agent": "polybit",
+  "status": "operational",
+  "mode": "paper",
+  "initialized": true,
+  "session_start": "2026-03-01T14:43:00Z",
+  "account": {
+    "starting_capital": 500.00,
+    "balance": 350.00,
+    "equity": 350.60,
+    "pnl": 0.60,
+    "pnl_percent": 0.12,
+    "max_loss_per_trade": 25.00,
+    "max_loss_per_day": 75.00,
+    "max_drawdown_limit": 250.00,
+    "daily_loss_limit": 75.00,
+    "current_daily_loss": 0.00,
+    "cash_reserved": 350.00
+  },
+  "positions": [
+    {
+      "symbol": "BTC-CALL-1045",
+      "type": "CALL",
+      "entry_time": "2026-03-01T19:43:30Z",
+      "entry_price": 0.45,
+      "position_size": 150.00,
+      "current_price": 0.4513,
+      "current_pnl": 0.60,
+      "pnl_percent": 0.27,
+      "momentum_score": 9.0,
+      "stop_loss": 0.4275,
+      "target_exit": 0.4613,
+      "expiry_time": "2026-03-01T19:58:30Z",
+      "time_remaining_min": 15.0,
+      "status": "OPEN - MONITOR"
+    }
+  ],
+  "trades": {
+    "total": 1,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": null,
+    "largest_win": null,
+    "largest_loss": null,
+    "total_fees": 0.50,
+    "consecutive_losses": 0
+  },
+  "daily_stats": {
+    "date": "2026-03-01",
+    "trades_today": 1,
+    "pnl_today": 0.60,
+    "max_equity_today": 500.00,
+    "min_equity_today": 350.60,
+    "win_rate_today": null
+  },
+  "cycle_stats": {
+    "last_spawn": "2026-03-01T19:43:30Z",
+    "total_cycles": 7,
+    "trades_per_cycle_avg": 0.14,
+    "momentum_scores_evaluated": 20,
+    "best_score_cycle_7": 9.0,
+    "best_score_cycle_2": 6.7
+  },
+  "performance_metrics": {
+    "profit_factor": null,
+    "sharpe_ratio": null,
+    "max_consecutive_losses": 0,
+    "best_trade": null,
+    "worst_trade": null,
+    "avg_win": null,
+    "avg_loss": null
+  },
+  "last_updated": "2026-03-01T19:43:50Z",
+  "notes": "Cycle 7 (2:43 PM EST): Scanned 5 BTC options with 14-16m expiry. BTC-CALL-1045 scored 9.0/10 (High Conviction) — Price Action +4pts, Order Book Pressure +3pts, Volatility Spike +2pts. Entry executed at $0.45 with $150 position. Stop: $0.4275 (-5%). Target: $0.4613 (+2.5%). Account: $350.60 equity. 1 open position, 15 min to expiry.",
+  "next_cycle_scheduled": "2026-03-01T19:53:00Z"
+}

@@ -12,7 +12,48 @@ interface AgentStatus {
 }
 
 export default function Dashboard() {
-  const [agents, setAgents] = useState<AgentStatus[]>([])
+  const [agents, setAgents] = useState<AgentStatus[]>([
+    {
+      name: 'Polybit (15m Bitcoin)',
+      status: 'OFFLINE',
+      equity: 0,
+      pnl: 0,
+      positions: 0,
+      lastUpdate: 'Loading...',
+    },
+    {
+      name: 'Prophet-Copier',
+      status: 'OFFLINE',
+      equity: 0,
+      pnl: 0,
+      positions: 0,
+      lastUpdate: 'Loading...',
+    },
+    {
+      name: 'Prophet (Meta)',
+      status: 'OFFLINE',
+      equity: 0,
+      pnl: 0,
+      positions: 0,
+      lastUpdate: 'Loading...',
+    },
+    {
+      name: 'HyperSOL (Solana)',
+      status: 'OFFLINE',
+      equity: 0,
+      pnl: 0,
+      positions: 0,
+      lastUpdate: 'Loading...',
+    },
+    {
+      name: 'Raydium Degen',
+      status: 'OPERATIONAL',
+      equity: 500,
+      pnl: 0,
+      positions: 0,
+      lastUpdate: new Date().toLocaleString(),
+    },
+  ])
   const [loading, setLoading] = useState(true)
   const [authenticated, setAuthenticated] = useState(false)
   const [password, setPassword] = useState('')

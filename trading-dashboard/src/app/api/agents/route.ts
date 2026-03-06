@@ -13,6 +13,7 @@ interface State {
 
 export async function GET() {
   try {
+    // Force rebuild - agents directory path
     const agentsDir = join(process.cwd(), '..', 'agents')
 
     const agents = []

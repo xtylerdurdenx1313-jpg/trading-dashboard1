@@ -31,17 +31,22 @@ export default function Dashboard() {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'
       const res = await fetch(`${apiUrl}/api/agents`)
       if (!res.ok) throw new Error('API failed')
-      const data = await res.json()
-      // Add Raydium Degen if not in response
-      if (!data.find((a: AgentStatus) => a.name === 'Raydium Degen')) {
-        data.push({
-          name: 'Raydium Degen',
-          status: 'OPERATIONAL',
-          equity: 500,
-          pnl: 0,
-          positions: 0,
-          lastUpdate: new Date().toLocaleString(),
-        })
+      let data = await res.json()
+      
+      // Ensure Raydium Degen is always in the list
+      const hasRaydium = data.some((a: AgentStatus) => a.name === 'Raydium Degen')
+      if (!hasRaydium) {
+        data = [
+          ...data,
+          {
+            name: 'Raydium Degen',
+            status: 'OPERATIONAL',
+            equity: 500,
+            pnl: 0,
+            positions: 0,
+            lastUpdate: new Date().toLocaleString(),
+          }
+        ]
       }
       setAgents(data)
     } catch (error) {

@@ -13,10 +13,7 @@ interface State {
 
 export async function GET() {
   try {
-    const agentsDir = join(
-      process.env.HOME || '/root',
-      '.openclaw/workspace/agents'
-    )
+    const agentsDir = join(process.cwd(), '..', 'agents')
 
     const agents = []
 

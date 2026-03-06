@@ -1,0 +1,80 @@
+{
+  "account": {
+    "starting_capital": 500.0,
+    "current_equity": 500.0,
+    "available_cash": 500.0,
+    "total_pnl": 0.0,
+    "total_pnl_pct": 0.0,
+    "max_equity": 500.0,
+    "min_equity": 500.0,
+    "timestamp_created": "2026-03-06T07:19:00Z",
+    "last_updated": "2026-03-06T10:04:13.103247"
+  },
+  "trading": {
+    "trades_total": 0,
+    "trades_won": 0,
+    "trades_lost": 0,
+    "win_rate": 0.0,
+    "consecutive_wins": 0,
+    "consecutive_losses": 0,
+    "avg_win": 0.0,
+    "avg_loss": 0.0,
+    "largest_win": 0.0,
+    "largest_loss": 0.0
+  },
+  "daily_metrics": {
+    "date": "2026-03-06",
+    "daily_pnl": 0.0,
+    "daily_loss_accumulated": 0.0,
+    "daily_trades": 0,
+    "daily_wins": 0,
+    "daily_losses": 0,
+    "loss_limit_hit": false,
+    "cooldown_active": false,
+    "cooldown_until": null
+  },
+  "positions": {
+    "open_positions": [],
+    "open_position_count": 0,
+    "total_exposure": 0.0,
+    "last_entry_time": null,
+    "last_exit_time": null
+  },
+  "risk_management": {
+    "max_trade_size": 100.0,
+    "min_trade_size": 25.0,
+    "daily_loss_limit": 25.0,
+    "stop_loss_pct": -20.0,
+    "account_floor": 450.0,
+    "position_timeout_hours": 4,
+    "current_trade_size": 50.0
+  },
+  "performance": {
+    "sharpe_ratio": 0.0,
+    "max_drawdown": 0.0,
+    "recovery_days": 0,
+    "profit_factor": 0.0,
+    "expectancy": 0.0
+  },
+  "signals": {
+    "altcoinist_alerts_received": 0,
+    "gmgn_scans_completed": 0,
+    "whale_transactions_detected": 0,
+    "trades_from_tier1": 0,
+    "trades_from_tier2": 0,
+    "trades_from_tier3": 0,
+    "trades_from_tier4": 0
+  },
+  "configuration": {
+    "paper_trading": true,
+    "active_hours_start": "09:00",
+    "active_hours_end": "20:00",
+    "timezone": "America/New_York",
+    "spawn_interval_minutes": 5,
+    "strategy_version": "1.0",
+    "whale_wallets": [
+      "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
+      "H72yLkhTnoBfhBTXXaj1RBXuirm8s8G5fcVh2XpQLggM"
+    ]
+  }
+}

@@ -1,5 +1,8 @@
 {
   "account": {
+    "balance": 500.0,
+    "equity": 500.0,
+    "pnl": 0.0,
     "starting_capital": 500.0,
     "current_equity": 500.0,
     "available_cash": 500.0,
@@ -10,6 +13,8 @@
     "timestamp_created": "2026-03-06T07:19:00Z",
     "last_updated": "2026-03-06T10:04:13.103247"
   },
+  "positions": [
+  ],
   "trading": {
     "trades_total": 0,
     "trades_won": 0,
@@ -32,13 +37,6 @@
     "loss_limit_hit": false,
     "cooldown_active": false,
     "cooldown_until": null
-  },
-  "positions": {
-    "open_positions": [],
-    "open_position_count": 0,
-    "total_exposure": 0.0,
-    "last_entry_time": null,
-    "last_exit_time": null
   },
   "risk_management": {
     "max_trade_size": 100.0,
